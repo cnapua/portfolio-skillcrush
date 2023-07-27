@@ -147,7 +147,7 @@ ol {
 
 p, 
 li {
-  font-size: 1rem;
+  font-size: 1.5rem;
   line-height: 1.5;
 }
 
@@ -371,10 +371,10 @@ header h2 {
 .tool-wrapper p {
   background-color: #191919;
   color: #E6E8E6;
-  margin: 20px 0;
-  width: 15%;
+  margin: 20px 20px;
+  width:  100%;
   padding: 40px 40px;
-  border-radius: 50%;
+  border-radius: 40%;
 }
 
 .tool {
@@ -397,9 +397,14 @@ header h2 {
   color: #000;
 }
 
+#profile-pic {
+  border-radius: 50%;
+}
+
 /* -------------------- Base Header Styles -------------------- */
 footer {
-  background-color: olive;
+  background-color: #191919;
+  color: #E6E8E6;
 }
 
 footer .contact-wrapper {
@@ -704,10 +709,11 @@ footer .social-icons li i {
   .language-wrapper, 
   .tool-wrapper {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
-    flex-flow: row wrap;
+    flex-flow: row;
     width: 100%;
-    text-transform: uppercase;
+    text-transform: none;
   }
 
   .skill, 
@@ -717,8 +723,13 @@ footer .social-icons li i {
 
   .language-wrapper p, 
   .tool-wrapper p {
-    padding: 20px 0;
+    padding: 10px 0;
+    font-size:  1.5rem;
+    border-radius: 50%;
   }
+  }
+
+  
 
   /* ABOUT */
   .about-conent-wrapper {
@@ -777,6 +788,13 @@ footer .social-icons li i {
   .about-into h3 {
     font-size: 3.5rem;
   }
+
+  .language-wrapper p, 
+  .tool-wrapper p {
+    font-size:  1.5rem;
+    padding: 40px;
+    border-radius: 50%;
+  }
 }
 
 
@@ -821,7 +839,9 @@ footer .social-icons li i {
 
   .language-wrapper p, 
   .tool-wrapper p {
-    font-size:  .95rem;
+    font-size:  1.5rem;
+    padding: 40px;
+    border-radius: 50%;
   }
 
   /* ELEMENT MARGINS 
