@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Caitlin Duquette | Portfolio</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -19,13 +19,166 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
+  <!-- HEADER SECTION -->
+  <header>
+    <div class ="content-wrapper">
+      <nav>
+        <ul>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact" id="contact-button">Contact Me</a></li>
+        </ul>
+      </nav>
+    <div class="site-intro"> <!-- was home title -->
+      <h1>Hi, I'm Caitlin Duquette</h1>
+      <h2>A Front End Web Developer who loves money.</h2>
+    </div>
+  </div>
+  </header>
+
+  <main>
+    <!-- PORTFOLIO SECTION -->
+    <article class="portfolio">
+      <section id="projects">
+        <h3 class="portfolio-header">Projects</h3>
+        <div class="portfolio-wrapper">
+          <div class="project-piece"><!-- was home-portfolio-piece -->
+            <figure>
+              <a href="https://zpg8jt.csb.app/" target="_blank"><img src="./img/superstickynote.jpg" alt="Super Sticky Notes preview"></a>
+            </figure>
+            <h4>Super Sticky Notes</h4>
+            <p class="project-description">This greenfield project allows users to add, edit, search for and delete “sticky notes.” Multiple components were used in building this interactive UI.</p>
+            <p><span>Skills:</span> ES6, JSX, Managing data flow, Manipulate the DOM</p>
+            <p><span>Tools:</span> CodeSanbox</p>
+            <a href="https://zpg8jt.csb.app/" class="project-link" target="_blank">View Page</a>
+          </div>
+          <div class="project-piece"><!-- was home-portfolio-piece -->
+            <figure>
+              <a href="https://nwlmn6.csb.app/" target="_blank"><img src="./img/nametaggenerator.jpg" alt="Name Tag Generator preview"></a>
+            </figure>
+            <h4>Name Tag Generator</h4>
+            <p class="project-description">A name tag generator that creates bulk name tags. Utilizes ES6 modules and functional components. </p>
+            <p><span>Skills:</span> JSX, ES6, Managing data flow</p>
+            <p><span>Tools:</span> CodeSandbox</p>
+            <a href="" class="project-link" target="_blank">View Page</a>
+          </div>
+          <div class="project-piece"><!-- was home-portfolio-piece -->
+            <figure>
+              <a href="https://cnapua.github.io/github-repo-gallery-main/" target="_blank"><img src="githubrepogallery.jpg" alt="GitHub Repo Gallery preview"></a>
+            </figure>
+            <h4>GitHub Repo Generator</h4>
+            <p class="project-description">This project pulls data from my GitHub portfolio, creating a gallery of repos. Visitors can click on the repos for more details, including a link to the actual repo. </p>
+            <p><span>Skills:</span> JavaScript, APIs, Manipulate the DOM</p>
+            <p><span>Tools:</span> GitHub, CodeSandbox</p>
+            <a href="" class="project-link" target="_blank">View Page</a>
+          </div>
+          <div class="project-piece"><!-- was home-portfolio-piece -->
+            <figure>
+              <a href="" target="_blank"><img src="" alt=""></a>
+            </figure>
+            <h4>Project Title</h4>
+            <p class="project-description"></p>
+            <p><span>Skills:</span> da skills.</p>
+            <p><span>Tools:</span> da tools.</p>
+            <a href="" class="project-link" target="_blank">View Page</a>
+          </div>
+        </div>
+      </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+      <div class="content-wrapper">
+        <h3 class="skill-header">Skills</h3>
+        <h4>Developer Skills</h4>
+        <div class="language-wrapper"><!-- was language-wrapper -->
+          <p class="skill">HTML, CSS</p>
+          <p class="skill">JavaScript</p>
+          <p class="skill">React</p>
+          <p class="skill">Git and GitHub</p>
+          <p class="skill">Responsive Web Development</p>
+          <p class="skill">Squarespace</p>
+        </div>
+        <h4>Tech Stack</h4>
+        <div class="language-wrapper"><!-- was language-wrapper -->
+          <p class="tool">GitHub Pages</p>
+          <p class="tool">CodeSandbox</p>
+          <p class="tool">Chrome DevTools</p>
+          <p class="tool">Adobe CC</p>
+          <p class="tool">Canva</p>
+        </div>
+      </div>
+    </section>
+
+    </article>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+      <div class="content-wrapper">
+        <div class="about-content-wrapper">
+        <figure>
+          <img src="" id="profile-pic" alt="">
+        </figure>
+        <div class="about-section"><!-- was about-info -->
+          <h3>Hi, I'm Caitlin Duquette.</h3>
+          <h4></h4>
+          <p class="about-info"><!-- was about-text -->
+            Passionate, driven, and solutions-based. My aim is to create experiences that are 
+            visually pleasing and engage users. 
+          </p>
+          <p class="about-info">I’m seeking projects and places that will utilize my dev, 
+            design and branding experiences. 
+          </p>
+          <p class="about-info">My hobbies are outdoor- and community-centric and include bioregional 
+            herbalism, community organizing, homesteading, with a little Brazilian jiu jitsu sprinkled
+             in for spice. (chili emoji)
+          </p>
+          <p><span>Cant wait to work with you</span></p>
+        </div>
+      </div>
+    </div>
+    </section>
+  </main>
+
+  <!-- FOOTER SECTION -->
+  <footer id="contact">
+    <div class="content-wrapper">
+      <h3>Let's Connect</h3>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h5 class="contact-title">Hire Me</h5>
+          <p>(888) 888-8888</p>
+          <p>caitlin.duquette@gmail.com</p>
+        </div>
+        <div class="contact-info">
+          <h5 class="contact-title">Follow Me</h5>
+          <ul class="social-icons">
+            <li><a href="" target="_blank"><i class="fab fa-###"></i>
+            </a></li>
+            <li><a href="" target="_blank"><i class="fab fa-###"></i>
+            </a></li>
+          </ul>
+        </div>
+        <div class="contact-info">
+          <h5 class="contact-title">Meet Me</h5>
+          <p>Maui, Hawaiʻi</p>
+          <p>Dont</p>
+        </div>
+      </div>
+      <p>Copyright 2023 Caitlin Duquette</p>
+    </div>
+  </footer>
 
   <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
