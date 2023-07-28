@@ -163,6 +163,10 @@ img {
   width: 100%;
 }
 
+address {
+  font-style: normal;
+}
+
 /* ARCHITECTURAL STYLES */
 
 header, 
@@ -191,6 +195,10 @@ h2,
 h3, 
 h4, 
 h5, 
+h6 {
+  margin: 0;
+}
+
 p {
   margin: 0;
 }
@@ -299,7 +307,10 @@ nav ul {
   justify-content: space-between;
 }
 
-header h1, 
+header h1 {
+  width: 100%;
+}
+
 header h2 {
   width: 100%;
 }
@@ -336,7 +347,7 @@ header h2 {
 }
 
 .project-piece h4 {
-  font-weight: bold;
+  font-weight: 800;
 }
 
 /* img */
@@ -348,7 +359,7 @@ header h2 {
 .project-link {
   background-color: #F15025;
   color: #191919;
-  padding: 50px 50px;
+  padding: 40px 40px;
   border-radius: 50%;
   font-weight: 700;
 }
@@ -394,14 +405,14 @@ header h2 {
 #about h3, 
 #about h4, 
 #about p {
-  color: #000;
+  color: #191919;
 }
 
 #profile-pic {
   border-radius: 50%;
 }
 
-/* -------------------- Base Header Styles -------------------- */
+/* -------------------- BASE HEADER STYLES -------------------- */
 footer {
   background-color: #191919;
   color: #E6E8E6;
@@ -447,7 +458,7 @@ footer .social-icons li {
 
 footer .social-icons li i {
   font-size: 1.875rem;
-  color: red;
+  color: #F15025;
 }
 
 
@@ -621,7 +632,7 @@ footer .social-icons li i {
     margin: 40px 0 60px 0;
   }
 
-  #skill {
+  #skills {
     padding-top: 80px;
   }
 
@@ -629,16 +640,8 @@ footer .social-icons li i {
     margin-bottom: 40px;
   }
 
-  #skill h4 {
+  #skills h4 {
     margin: 40px 0 20px 0;
-  }
-
-  .about-section h3 {
-    margin: 80px 0;
-  }
-
-  .about-section h4 {
-    margin: 0 0 60px 0;
   }
 
   .about-section h3 {
@@ -655,10 +658,6 @@ footer .social-icons li i {
 
   .contact-info {
     margin: 80px 0;
-  }
-
-  .contact-title {
-    margin: 0 0 30px 0;
   }
 
   .contact-title {
@@ -692,7 +691,7 @@ footer .social-icons li i {
     flex-flow: row wrap;
   }
 
-  .h2 {
+  .sit-intro h2 {
     max-width: 80%;
   }
 
@@ -702,35 +701,36 @@ footer .social-icons li i {
   }
 
   .project-piece {
-  align-items: center;
-  width: 45%;
+    align-items: center;
+    width: 45%;
+  }
+
+  .project-description {
+    width: 95%;
   }
 
   .language-wrapper, 
   .tool-wrapper {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-evenly;
-    flex-flow: row;
+    justify-content: center;
+    align-items: auto;
+    align-content: start;;
     width: 100%;
     text-transform: none;
   }
 
   .skill, 
   .tool {
-    width: 50%;
+    width: 45%;
   }
 
   .language-wrapper p, 
   .tool-wrapper p {
-    padding: 10px 0;
-    font-size:  1.5rem;
-    border-radius: 50%;
+    padding: 15px 0;
   }
-  }
-
   
-
   /* ABOUT */
   .about-conent-wrapper {
     display: flex;
@@ -782,7 +782,7 @@ footer .social-icons li i {
 @media only screen and (min-width:1024px) {
   /* For landscape tablets, iPad Pro */ 
   .content-wrapper {
-    max-width: 900px;
+    max-width: 1024px;
   }
 
   .about-into h3 {
@@ -835,6 +835,16 @@ footer .social-icons li i {
 
   .project-link {
     font-size:  1.15rem;
+  }
+
+  .language-wrapper, 
+  .tool-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-flow: row;
+    width: 100%;
+    text-transform: none;
   }
 
   .language-wrapper p, 
@@ -932,10 +942,10 @@ footer .social-icons li i {
 
   nav ul li a:hover, 
   nav #contact-link:hover {
-    background: #b3d4fc;
-    color: #FFF;
+    background: none;
+    color: #191919;
     padding: 10px 10px;
-    border-radius: 30px;
+    border-bottom: 3px solid #F15025;
   }
 
   .home-title {
@@ -982,8 +992,6 @@ footer .social-icons li i {
     justify-content: space-between;
   }
 }
-
-
 
 
 @media print,
