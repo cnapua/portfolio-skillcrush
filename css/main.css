@@ -180,7 +180,7 @@ footer {
   text-align: center;
 }
 
-#work p,
+#projects p,
 #about p {
   width: 100%;
   text-align: left;
@@ -782,7 +782,7 @@ footer .social-icons li i {
 @media only screen and (min-width:1024px) {
   /* For landscape tablets, iPad Pro */ 
   .content-wrapper {
-    max-width: 1024px;
+    max-width: 900px;
   }
 
   .about-into h3 {
@@ -829,11 +829,18 @@ footer .social-icons li i {
     font-size: 2rem;
   }
 
+  .about-info h3 {
+    font-size: 3.75rem;
+    text-align: left;
+  }
+
   p {
     font-size: 1.25rem;
   }
 
-  .project-link {
+  .project-link,
+  .language-wrapper p, 
+  .tool-wrapper p  {
     font-size:  1.15rem;
   }
 
@@ -847,13 +854,6 @@ footer .social-icons li i {
     text-transform: none;
   }
 
-  .language-wrapper p, 
-  .tool-wrapper p {
-    font-size:  1.5rem;
-    padding: 40px;
-    border-radius: 50%;
-  }
-
   /* ELEMENT MARGINS 
   list element has bottom margin 20px */  
   header {
@@ -865,7 +865,7 @@ footer .social-icons li i {
     margin-bottom: 80px;
   }
 
-  #work {
+  #projects {
     padding-top: 80px;
   }
 
@@ -912,6 +912,10 @@ footer .social-icons li i {
 
   .about-section h3 {
     margin: 0;
+  }
+
+  .about-section h4 {
+    margin: 40px 0;
   }
 
   .about-info {
