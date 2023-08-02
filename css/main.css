@@ -382,10 +382,8 @@ header h2 {
 .tool-wrapper p {
   background-color: #191919;
   color: #E6E8E6;
+  padding: 15px 0;
   margin: 20px 20px;
-  width:  100%;
-  padding: 40px 40px;
-  border-radius: 40%;
 }
 
 .tool {
@@ -708,6 +706,7 @@ footer .social-icons li i {
   .project-description {
     width: 95%;
   }
+  
 
   .language-wrapper, 
   .tool-wrapper {
@@ -716,7 +715,7 @@ footer .social-icons li i {
     flex-direction: row;
     justify-content: center;
     align-items: auto;
-    align-content: start;;
+    align-content: start;
     width: 100%;
     text-transform: none;
   }
@@ -730,6 +729,7 @@ footer .social-icons li i {
   .tool-wrapper p {
     padding: 15px 0;
   }
+  
   
   /* ABOUT */
   .about-conent-wrapper {
@@ -787,13 +787,6 @@ footer .social-icons li i {
 
   .about-into h3 {
     font-size: 3.5rem;
-  }
-
-  .language-wrapper p, 
-  .tool-wrapper p {
-    font-size:  1.5rem;
-    padding: 40px;
-    border-radius: 50%;
   }
 }
 
@@ -984,6 +977,13 @@ footer .social-icons li i {
 
   .about-info {
     width: 58%;
+  }
+
+  .layout {
+    display: flex;
+    gap: 15%;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   /* CONTACT */
